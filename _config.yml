@@ -1,15 +1,12 @@
-permalink: /:categories/:title.html
-url: "https://kerivietnam.github.io/"
-full_name: "Your Full Name"
-first_name: "First Name"
-last_name: "Last Name"
-blog_title: "Blog title "
-author_img_name_path: "/images/users/user.jpg"
-disqus_shortname: "kerivietnam"
-copyright_year: "2014"
-google_analytics_code: ""
-aboutme: "Something about the author here"
-twitter: "Ghosteyes1"
-github: "kerivietnam"
-facebook: "mepasindu"
-linkined_url: ""
+# Site settings
+title:
+email:
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
