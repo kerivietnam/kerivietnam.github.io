@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Products</title>
+		<description><![CDATA[]]></description>
+		<link>http://localhost/animax/index.php/shop</link>
+		<lastBuildDate>Sun, 05 Jan 2020 10:09:02 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://localhost/animax/index.php/shop/products?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<managingEditor>support@themeparrot.com (AnimaX)</managingEditor>
+		<item>
+			<title>Mobile Stickers</title>
+			<link>http://localhost/animax/index.php/shop/20-mobile-stickers</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/20-mobile-stickers</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/Mobile Stickers.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:37:29 +0000</pubDate>
+		</item>
+		<item>
+			<title>Laptop Skin</title>
+			<link>http://localhost/animax/index.php/shop/19-laptop-skin</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/19-laptop-skin</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/laptop_skin.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:35:28 +0000</pubDate>
+		</item>
+		<item>
+			<title>Tea Cup</title>
+			<link>http://localhost/animax/index.php/shop/18-tea-cup</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/18-tea-cup</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/mug.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:34:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>Ditka</title>
+			<link>http://localhost/animax/index.php/shop/16-ditka</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/16-ditka</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/ditka.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:27:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>Witch</title>
+			<link>http://localhost/animax/index.php/shop/15-crazy-girl</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/15-crazy-girl</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/blue.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:26:14 +0000</pubDate>
+		</item>
+		<item>
+			<title>Winter Soldier</title>
+			<link>http://localhost/animax/index.php/shop/14-winter-soldier</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/14-winter-soldier</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/soldier.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:25:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Mask</title>
+			<link>http://localhost/animax/index.php/shop/13-mask</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/13-mask</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/mask.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:24:04 +0000</pubDate>
+		</item>
+		<item>
+			<title>Warrior</title>
+			<link>http://localhost/animax/index.php/shop/12-warrior</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/12-warrior</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/triangle.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:23:03 +0000</pubDate>
+		</item>
+		<item>
+			<title>Ninja</title>
+			<link>http://localhost/animax/index.php/shop/11-ninja</link>
+			<guid isPermaLink="true">http://localhost/animax/index.php/shop/11-ninja</guid>
+			<description><![CDATA[<p><img src="http://localhost/animax/images/products/ninja.jpg" /></p>]]></description>
+			<author>tranninhnhattuan@gmail.com (Super User)</author>
+			<category>T-shirts</category>
+			<pubDate>Tue, 16 Sep 2014 05:21:16 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
