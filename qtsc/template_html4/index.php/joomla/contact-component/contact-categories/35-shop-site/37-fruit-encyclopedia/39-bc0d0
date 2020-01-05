@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Contact Categories</title>
+		<description><![CDATA[QTSC Incubator
+Software Bussiness Incubator]]></description>
+		<link>http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site/37-fruit-encyclopedia/39-b</link>
+		<lastBuildDate>Sun, 05 Jan 2020 12:50:53 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site/37-fruit-encyclopedia/39-b?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<item>
+			<title>Bananas</title>
+			<link>http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site/37-fruit-encyclopedia/39-b/5</link>
+			<guid isPermaLink="true">http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site/37-fruit-encyclopedia/39-b/5</guid>
+			<description><![CDATA[Image Credit: Enzik
+Rights: Creative Commons Share Alike Unported 3.0
+Source: http://commons.wikimedia.org/wiki/File:Bananas_-_Morocco.jpg]]></description>
+			<category>B</category>
+			<pubDate>Sun, 05 Jan 2020 11:35:20 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

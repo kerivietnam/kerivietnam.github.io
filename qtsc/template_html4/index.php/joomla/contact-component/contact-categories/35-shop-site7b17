@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Contact Categories</title>
+	<subtitle type="text">QTSC Incubator
+Software Bussiness Incubator</subtitle>
+	<link rel="alternate" type="text/html" href="http://localhost"/>
+	<id>http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site</id>
+	<updated>2020-01-05T12:50:51+00:00</updated>
+	<author>
+		<name>QTSC Incubator</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Shop Address</title>
+		<link rel="alternate" type="text/html" href="http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site/8"/>
+		<published>2020-01-05T11:35:20+00:00</published>
+		<updated>2020-01-05T11:35:20+00:00</updated>
+		<id>http://localhost/qtscincubator/index.php/joomla/contact-component/contact-categories/35-shop-site/8</id>
+		<author>
+			<name>Joomla</name>
+		</author>
+		<category term="Shop Site" />
+	</entry>
+</feed>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Featured Articles</title>
+	<subtitle type="text">QTSC Incubator
+Software Bussiness Incubator</subtitle>
+	<link rel="alternate" type="text/html" href="http://localhost"/>
+	<id>http://localhost/qtscincubator/index.php/joomla/content-component/featured-articles</id>
+	<updated>2020-01-05T12:49:56+00:00</updated>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://localhost/qtscincubator/index.php/joomla/content-component/featured-articles?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Joomla!</title>
+		<link rel="alternate" type="text/html" href="http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/24-joomla"/>
+		<published>2020-01-05T12:35:20+00:00</published>
+		<updated>2020-01-05T12:35:20+00:00</updated>
+		<id>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/24-joomla</id>
+		<author>
+			<name>Joomla</name>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Congratulations! You have a Joomla site! Joomla makes it easy to build a website just the way you want it and keep it simple to update and maintain.&lt;/p&gt;
+&lt;p&gt;Joomla is a flexible and powerful platform, whether you are building a small site for yourself or a huge site with hundreds of thousands of visitors. Joomla is open source, which means you can make it work just the way you want it to.&lt;/p&gt;
+&lt;p&gt;The content in this installation of Joomla has been designed to give you an in depth tour of Joomla's features.&lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Congratulations! You have a Joomla site! Joomla makes it easy to build a website just the way you want it and keep it simple to update and maintain.&lt;/p&gt;
+&lt;p&gt;Joomla is a flexible and powerful platform, whether you are building a small site for yourself or a huge site with hundreds of thousands of visitors. Joomla is open source, which means you can make it work just the way you want it to.&lt;/p&gt;
+&lt;p&gt;The content in this installation of Joomla has been designed to give you an in depth tour of Joomla's features.&lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Featured" />
+		<category term="Joomla!" />
+	</entry>
+	<entry>
+		<title>Beginners</title>
+		<link rel="alternate" type="text/html" href="http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/8-beginners"/>
+		<published>2020-01-05T12:35:20+00:00</published>
+		<updated>2020-01-05T12:35:20+00:00</updated>
+		<id>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/8-beginners</id>
+		<author>
+			<name>Joomla</name>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;If this is your first Joomla! site or your first web site, you have come to the right place. Joomla will help you get your website up and running quickly and easily.&lt;/p&gt;
+&lt;p&gt;Start off using your site by logging in using the administrator account you created when you installed Joomla.&lt;/p&gt;
+&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;If this is your first Joomla! site or your first web site, you have come to the right place. Joomla will help you get your website up and running quickly and easily.&lt;/p&gt;
+&lt;p&gt;Start off using your site by logging in using the administrator account you created when you installed Joomla.&lt;/p&gt;
+&lt;/div&gt;</content>
+		<category term="Featured" />
+		<category term="Joomla!" />
+	</entry>
+	<entry>
+		<title>Upgraders</title>
+		<link rel="alternate" type="text/html" href="http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/50-upgraders"/>
+		<published>2020-01-05T12:35:20+00:00</published>
+		<updated>2020-01-05T12:35:20+00:00</updated>
+		<id>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/50-upgraders</id>
+		<author>
+			<name>Joomla</name>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;If you are an experienced Joomla! user, this Joomla site will seem very familiar but also very different. The biggest change is the new administrator interface and the adoption of responsive design. Hundreds of other improvements have been made.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;If you are an experienced Joomla! user, this Joomla site will seem very familiar but also very different. The biggest change is the new administrator interface and the adoption of responsive design. Hundreds of other improvements have been made.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;</content>
+		<category term="Featured" />
+		<category term="Joomla!" />
+	</entry>
+	<entry>
+		<title>Professionals</title>
+		<link rel="alternate" type="text/html" href="http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/35-professionals"/>
+		<published>2020-01-05T12:35:20+00:00</published>
+		<updated>2020-01-05T12:35:20+00:00</updated>
+		<id>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/35-professionals</id>
+		<author>
+			<name>Joomla</name>
+		</author>
+		<summary type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Joomla! 3 continues development of the Joomla Platform and CMS as a powerful and flexible way to bring your vision of the web to reality. With the new administrator interface and adoption of Twitter Bootstrap, the ability to control its look and the management of extensions is now complete.&lt;/p&gt;
+&lt;/div&gt;</summary>
+		<content type="html">&lt;div class=&quot;feed-description&quot;&gt;&lt;p&gt;Joomla! 3 continues development of the Joomla Platform and CMS as a powerful and flexible way to bring your vision of the web to reality. With the new administrator interface and adoption of Twitter Bootstrap, the ability to control its look and the management of extensions is now complete.&lt;/p&gt;
+&lt;/div&gt;</content>
+		<category term="Featured" />
+		<category term="Joomla!" />
+	</entry>
+</feed>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Featured Articles</title>
+		<description><![CDATA[QTSC Incubator
+Software Bussiness Incubator]]></description>
+		<link>http://localhost/qtscincubator/index.php/joomla/content-component/featured-articles</link>
+		<lastBuildDate>Sun, 05 Jan 2020 12:49:55 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://localhost/qtscincubator/index.php/joomla/content-component/featured-articles?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<item>
+			<title>Joomla!</title>
+			<link>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/24-joomla</link>
+			<guid isPermaLink="true">http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/24-joomla</guid>
+			<description><![CDATA[<div class="feed-description"><p>Congratulations! You have a Joomla site! Joomla makes it easy to build a website just the way you want it and keep it simple to update and maintain.</p>
+<p>Joomla is a flexible and powerful platform, whether you are building a small site for yourself or a huge site with hundreds of thousands of visitors. Joomla is open source, which means you can make it work just the way you want it to.</p>
+<p>The content in this installation of Joomla has been designed to give you an in depth tour of Joomla's features.</p></div>]]></description>
+			<category>Featured</category>
+			<category>Joomla!</category>
+			<pubDate>Sun, 05 Jan 2020 12:35:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Beginners</title>
+			<link>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/8-beginners</link>
+			<guid isPermaLink="true">http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/8-beginners</guid>
+			<description><![CDATA[<div class="feed-description"><p>If this is your first Joomla! site or your first web site, you have come to the right place. Joomla will help you get your website up and running quickly and easily.</p>
+<p>Start off using your site by logging in using the administrator account you created when you installed Joomla.</p>
+</div>]]></description>
+			<category>Featured</category>
+			<category>Joomla!</category>
+			<pubDate>Sun, 05 Jan 2020 12:35:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Upgraders</title>
+			<link>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/50-upgraders</link>
+			<guid isPermaLink="true">http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/50-upgraders</guid>
+			<description><![CDATA[<div class="feed-description"><p>If you are an experienced Joomla! user, this Joomla site will seem very familiar but also very different. The biggest change is the new administrator interface and the adoption of responsive design. Hundreds of other improvements have been made.</p>
+<p> </p>
+<p> </p></div>]]></description>
+			<category>Featured</category>
+			<category>Joomla!</category>
+			<pubDate>Sun, 05 Jan 2020 12:35:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Professionals</title>
+			<link>http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/35-professionals</link>
+			<guid isPermaLink="true">http://localhost/qtscincubator/index.php/joomla/content-component/article-category-list/35-professionals</guid>
+			<description><![CDATA[<div class="feed-description"><p>Joomla! 3 continues development of the Joomla Platform and CMS as a powerful and flexible way to bring your vision of the web to reality. With the new administrator interface and adoption of Twitter Bootstrap, the ability to control its look and the management of extensions is now complete.</p>
+</div>]]></description>
+			<category>Featured</category>
+			<category>Joomla!</category>
+			<pubDate>Sun, 05 Jan 2020 12:35:20 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
