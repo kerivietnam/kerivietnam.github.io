@@ -5667,7 +5667,7 @@ var safeActiveElement = $.ui.safeActiveElement = function( document ) {
 
 //>>label: Menu
 //>>group: Widgets
-//>>description: Creates nestable menus.
+//>>description: Creates nestable Menu.
 //>>docs: http://api.jqueryui.com/menu/
 //>>demos: http://jqueryui.com/menu/
 //>>css.structure: ../../themes/base/core.css
@@ -5685,7 +5685,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 			submenu: "ui-icon-caret-1-e"
 		},
 		items: "> *",
-		menus: "ul",
+		Menu: "ul",
 		position: {
 			my: "left top",
 			at: "right top"
@@ -5702,7 +5702,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 		this.activeMenu = this.element;
 
 		// Flag used to prevent firing of the click handler
-		// as the event bubbles up through nested menus
+		// as the event bubbles up through nested Menu
 		this.mouseHandled = false;
 		this.element
 			.uniqueId()
@@ -5798,7 +5798,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 
 		this.refresh();
 
-		// Clicks outside of a menu collapse any open menus
+		// Clicks outside of a menu collapse any open Menu
 		this._on( this.document, {
 			click: function( event ) {
 				if ( this._closeOnDocumentClick( event ) ) {
@@ -5814,11 +5814,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 	_destroy: function() {
 		var items = this.element.find( ".ui-menu-item" )
 				.removeAttr( "role aria-disabled" ),
-			submenus = items.children( ".ui-menu-item-wrapper" )
+			subMenu = items.children( ".ui-menu-item-wrapper" )
 				.removeUniqueId()
 				.removeAttr( "tabIndex role aria-haspopup" );
 
-		// Destroy (sub)menus
+		// Destroy (sub)Menu
 		this.element
 			.removeAttr( "aria-activedescendant" )
 			.find( ".ui-menu" ).addBack()
@@ -5827,7 +5827,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 				.removeUniqueId()
 				.show();
 
-		submenus.children().each( function() {
+		subMenu.children().each( function() {
 			var elem = $( this );
 			if ( elem.data( "ui-menu-submenu-caret" ) ) {
 				elem.remove();
@@ -5929,15 +5929,15 @@ var widgetsMenu = $.widget( "ui.menu", {
 	},
 
 	refresh: function() {
-		var menus, items, newSubmenus, newItems, newWrappers,
+		var Menu, items, newSubMenu, newItems, newWrappers,
 			that = this,
 			icon = this.options.icons.submenu,
-			submenus = this.element.find( this.options.menus );
+			subMenu = this.element.find( this.options.Menu );
 
 		this._toggleClass( "ui-menu-icons", null, !!this.element.find( ".ui-icon" ).length );
 
-		// Initialize nested menus
-		newSubmenus = submenus.filter( ":not(.ui-menu)" )
+		// Initialize nested Menu
+		newSubMenu = subMenu.filter( ":not(.ui-menu)" )
 			.hide()
 			.attr( {
 				role: this.options.role,
@@ -5956,10 +5956,10 @@ var widgetsMenu = $.widget( "ui.menu", {
 				menu.attr( "aria-labelledby", item.attr( "id" ) );
 			} );
 
-		this._addClass( newSubmenus, "ui-menu", "ui-widget ui-widget-content ui-front" );
+		this._addClass( newSubMenu, "ui-menu", "ui-widget ui-widget-content ui-front" );
 
-		menus = submenus.add( this.element );
-		items = menus.find( this.options.items );
+		Menu = subMenu.add( this.element );
+		items = Menu.find( this.options.items );
 
 		// Initialize menu-items containing spaces and/or dashes only as dividers
 		items.not( ".ui-menu-item" ).each( function() {
@@ -6129,7 +6129,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 				$( event && event.target ).closest( this.element.find( ".ui-menu" ) );
 
 			// If we found no valid submenu ancestor, use the main menu to close all
-			// sub menus anyway
+			// sub Menu anyway
 			if ( !currentMenu.length ) {
 				currentMenu = this.element;
 			}
@@ -6146,7 +6146,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 	},
 
 	// With no arguments, closes the currently active menu - if nothing is active
-	// it closes all menus.  If passed an argument, it will search for menus BELOW
+	// it closes all Menu.  If passed an argument, it will search for Menu BELOW
 	_close: function( startMenu ) {
 		if ( !startMenu ) {
 			startMenu = this.active ? this.active.parent() : this.element;
@@ -6575,7 +6575,7 @@ $.widget( "ui.autocomplete", {
 					$( "<div>" ).text( label ).appendTo( this.liveRegion );
 				}
 			},
-			menuselect: function( event, ui ) {
+			Menuelect: function( event, ui ) {
 				var item = ui.item.data( "ui-autocomplete-item" ),
 					previous = this.previous;
 

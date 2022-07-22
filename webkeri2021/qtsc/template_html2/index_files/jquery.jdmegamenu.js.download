@@ -30,15 +30,15 @@
             _container = _navbar.children('.container');
          }
          var _megamenu = _navbar.find(settings.megamenuClass);
-         var _submenus = _megamenu.find(settings.submenuClass);
+         var _subMenu = _megamenu.find(settings.submenuClass);
 
          var init = function () {
             if (!_navbar.is(':visible')) {
                return false;
             }
             var _megamenu = _navbar.find(settings.megamenuClass);
-            var _submenus = _megamenu.find(settings.submenuClass);
-            _submenus.children('li').each(function () {
+            var _subMenu = _megamenu.find(settings.submenuClass);
+            _subMenu.children('li').each(function () {
                if ($(this).children(settings.submenuClass).length) {
                   if (!$(this).children(settings.submenuClass).hasClass('d-block')) {
 

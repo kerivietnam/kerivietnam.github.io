@@ -4023,7 +4023,7 @@
 
         var isActive = $$$1(this._menu).hasClass(ClassName.SHOW);
 
-        Dropdown._clearMenus();
+        Dropdown._clearMenu();
 
         if (isActive) {
           return;
@@ -4220,7 +4220,7 @@
         });
       };
 
-      Dropdown._clearMenus = function _clearMenus(event) {
+      Dropdown._clearMenu = function _clearMenu(event) {
         if (event && (event.which === RIGHT_MOUSE_BUTTON_WHICH || event.type === 'keyup' && event.which !== TAB_KEYCODE)) {
           return;
         }
@@ -4364,7 +4364,7 @@
      */
 
 
-    $$$1(document).on(Event.KEYDOWN_DATA_API, Selector.DATA_TOGGLE, Dropdown._dataApiKeydownHandler).on(Event.KEYDOWN_DATA_API, Selector.MENU, Dropdown._dataApiKeydownHandler).on(Event.CLICK_DATA_API + " " + Event.KEYUP_DATA_API, Dropdown._clearMenus).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
+    $$$1(document).on(Event.KEYDOWN_DATA_API, Selector.DATA_TOGGLE, Dropdown._dataApiKeydownHandler).on(Event.KEYDOWN_DATA_API, Selector.MENU, Dropdown._dataApiKeydownHandler).on(Event.CLICK_DATA_API + " " + Event.KEYUP_DATA_API, Dropdown._clearMenu).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
       event.preventDefault();
       event.stopPropagation();
 
