@@ -523,6 +523,34 @@ ul.sign li a i {
      background-repeat: no-repeat;
 }
 
+.banner_thietkeweb {
+     padding: 60px 0 0px 0;
+     background: url(../images/banner_thietkeweb.jpg);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+}
+
+.banner_chukyso {
+     padding: 60px 0 0px 0;
+     background: url(../images/banner_chukyso.jpg);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+}
+
+.banner_hoadondientu {
+     padding: 60px 0 0px 0;
+     background: url(../images/banner_hoadondientu.jpg);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+}
+
+.banner_lienhe {
+     padding: 60px 0 0px 0;
+     background: url(../images/banner_lienhe.jpg);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+}
+
 .text-bg {
      text-align: left;
      padding-top: 120px;
