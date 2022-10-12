@@ -1,1 +1,1 @@
-http://34.101.193.172/foodformular
+http://34.101.193.172:80/foodformular
