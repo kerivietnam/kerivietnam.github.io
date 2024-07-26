@@ -386,10 +386,69 @@ Google translate
     #popupAddCart video {
         height: 450px;
     }
+
 }
 
 @media screen and (max-width: 414.98px) {
     #popupAddCart video {
         height: 400px;
+    }
+
+}
+
+.video-container {
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 14%;
+    left: 11.4%;
+    width: 31%;
+    height: 50%;
+    display: none;
+    z-index: 2;
+}
+
+.video-overlay video {
+    /* top: 21%;
+    left: 15.5%; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .video-overlay {
+        position: absolute;
+        top: 56%;
+        /* Điều chỉnh vị trí top cho màn hình nhỏ hơn */
+        left: 16%;
+        /* Điều chỉnh vị trí left cho màn hình nhỏ hơn */
+        width: 69.6%;
+        /* Điều chỉnh chiều rộng cho màn hình nhỏ hơn */
+        height: 24%;
+        /* Điều chỉnh chiều cao cho màn hình nhỏ hơn */
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .video-overlay {
+        position: absolute;
+        top: 15%;
+        /* Điều chỉnh vị trí top cho iPad trong chế độ ngang */
+        left: 10%;
+        /* Điều chỉnh vị trí left cho iPad trong chế độ ngang */
+        width: 80%;
+        /* Điều chỉnh chiều rộng cho iPad trong chế độ ngang */
+        height: 60%;
+        /* Điều chỉnh chiều cao cho iPad trong chế độ ngang */
+        display: none;
     }
 }

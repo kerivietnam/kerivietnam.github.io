@@ -177,3 +177,41 @@ window.addEventListener("load", function () {
     header.classList.remove("sticky");
   }
 });
+
+function showVideo(x) {
+  // Lấy ra tất cả các phần tử có class "image_1"
+  var images = document.getElementsByClassName("image_1");
+  // Duyệt qua từng phần tử và ẩn nút play, hiển thị video overlay cho phần tử được nhấn
+  for (let i = 0; i < images.length; i++) {
+    // Nếu là phần tử được nhấn (x là số thứ tự của phần tử bắt đầu từ 1)
+    if (i + 1 === x) {
+      // Tìm video overlay của phần tử được nhấn và hiển thị (phần tử có class default-ltr-cache-bjn8wh)
+      var videoOverlay = images[i].parentNode.querySelector(".video-overlay");
+      videoOverlay.style.display = "block";
+      images[i].style.display = "none";
+      var imageToRemove = images[i].parentNode.querySelector(".image_software");
+      if (imageToRemove) {
+        imageToRemove.remove();
+      }
+    }
+  }
+}
+
+function showVideo_1(x) {
+  // Lấy ra tất cả các phần tử có class "image_1"
+  var images = document.getElementsByClassName("image_1");
+  // Duyệt qua từng phần tử và ẩn nút play, hiển thị video overlay cho phần tử được nhấn
+  for (let i = 0; i < images.length; i++) {
+    // Nếu là phần tử được nhấn (x là số thứ tự của phần tử bắt đầu từ 1)
+    if (i + 1 === x) {
+      // Tìm video overlay của phần tử được nhấn và hiển thị (phần tử có class default-ltr-cache-bjn8wh)
+      var videoOverlay = images[i].parentNode.nextElementSibling;
+      videoOverlay.style.display = "block";
+      images[i].style.display = "none";
+      var imageToRemove = images[i].parentNode.querySelector(".image_software");
+      if (imageToRemove) {
+        imageToRemove.remove();
+      }
+    }
+  }
+}
