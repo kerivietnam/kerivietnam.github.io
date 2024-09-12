@@ -494,6 +494,7 @@ Google translate
     .close {
         position: absolute;
         top: 30px;
+        z-index: 3;
     } 
     #video-intro-modal {
         width: 100%;
