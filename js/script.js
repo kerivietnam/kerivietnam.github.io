@@ -184,7 +184,7 @@ function showVideo(x) {
   // Duyệt qua từng phần tử và ẩn nút play, hiển thị video overlay cho phần tử được nhấn
   for (let i = 0; i < images.length; i++) {
     // Nếu là phần tử được nhấn (x là số thứ tự của phần tử bắt đầu từ 1)
-    if (i + 1 === x) {
+    if (i === x) {
       // Tìm video overlay của phần tử được nhấn và hiển thị (phần tử có class default-ltr-cache-bjn8wh)
       var videoOverlay = images[i].parentNode.querySelector(".video-overlay");
       videoOverlay.style.display = "block";
