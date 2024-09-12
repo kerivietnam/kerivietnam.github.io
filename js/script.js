@@ -215,3 +215,22 @@ function showVideo_1(x) {
     }
   }
 }
+
+// Modal
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+var video = document.getElementById("video-intro-modal");
+var videoWrapper = document.querySelector(".video-wrapper");
+window.onload = function () {
+  modal.style.display = "block";
+};
+span.onclick = function () {
+  modal.style.display = "none";
+  video.pause();
+};
+window.onclick = function (event) {
+  if (event.target == videoWrapper) {
+    modal.style.display = "none";
+    video.pause();
+  }
+};
