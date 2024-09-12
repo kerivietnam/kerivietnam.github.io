@@ -488,6 +488,14 @@ Google translate
     text-align: center;
 }
 
+@media (min-width: 1165px) {
+
+	#image-hot-mask {
+		left: 29% !important;
+	}
+	
+}
+
 @media (max-width: 599px) {
     .modal-content {
         height: 100vh;
