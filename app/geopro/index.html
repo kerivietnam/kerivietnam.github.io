@@ -18,6 +18,10 @@
         color: #282828;
         margin: 0;
       }
+      h2 {
+        text-align: center;
+        color: #1e6295;
+      }
       li {
         font-weight: bold;
         font-size: 1.3rem;
@@ -38,8 +42,38 @@
       img {
         width: 60%;  
       }
+      .header-nav {
+        position: fixed;
+        width: 95vw;
+        z-index: 10;
+        background: #fff;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        padding: 8px 24px;
+        justify-content: space-between;
+        box-shadow: 0 4px 2px -3px rgb(149, 149, 149);
+      }
+      .header-nav-item {
+        color: #282828;
+        cursor: pointer;
+      }
+      .header-nav-item:hover {
+        color: #1e6295;
+      }
+      .header-nav-item-right {
+        display: flex; 
+        gap: 18px; 
+        font-size: 1rem;
+      }
+      .logo {
+        font-size: 3em;
+        font-weight: 900;
+        font-family: 'Bruno Ace SC', cursive;
+        letter-spacing: -9px;
+      }
       .container {
-        padding: 20px;
+        padding: 100px 20px 20px 20px;
         display: flex;
       }
       .container-content {
@@ -49,7 +83,7 @@
         width: 30%;
         position: -webkit-sticky;
         position: fixed;
-        top: 50px;
+        top: 100px;
       }
       .sidebar-wrapper {
         width: 100%;
@@ -70,7 +104,7 @@
         cursor: pointer;
         line-height: 1.3;
       }
-      a:hover {
+      .sidebar-item a:hover {
         color: #1e6295;
       }
       .sidebar-content {
@@ -86,8 +120,24 @@
       ol[type="1"] {
           padding-left: 8px;
       }
+      .main-content-wrapper {
+          display: none;
+        }
       /* Mobile */
       @media (max-width: 599px) {
+        .main-content-wrapper {
+          display: block;
+        }
+        .header-nav {
+          width: 90vw;
+        }
+        .header-nav-item-right {
+          gap: 8px; 
+          flex-direction: column-reverse;
+        }
+        .header-nav-item {
+          text-align: center;
+      }
         img {
           width: 92% !important;
         }
@@ -105,6 +155,7 @@
         .container-content {
           width: 100%;
           margin-left: 0;
+          margin-top: 80px;
         }
         ol[type="1"] {
           padding-left: 0;
@@ -122,232 +173,289 @@
     </style>
   </head>
   <body>
-    <div class="container">
-        <div class="container-sidebar">
-          <div class="sidebar-wrapper">
-            <div class="sidebar-header">Nội dung bài viết</div>
-            <div class="sidebar-content">
-              <div class="sidebar-item">
-                <a href="#intro">I. Giới thiệu</a>
-              </div>
-              <div class="sidebar-item">
-                <a href="#user">II. Vai trò Người dùng</a>
-                <div class="sidebar-sub-item">
-                  <a href="#user-login">1. Đăng nhập</a>
+    <div class="wrapper" style="width: 100%;">
+      <nav class="header-nav">
+        <a href="https://keri.vn/" class="logo">
+          <span style="color: #F5004F">K</span>
+          <span style="color: #6EACDA;">E</span>
+          <span style="color: #9bdc66;">R</span>
+          <span style="color: #ebd803;">I</span>
+          </a>
+        <div class="header-nav-item-right">
+          <a href="/hdmuahang/index.html" class="header-nav-item">Hướng Dẫn Mua Hàng</a>
+          <a href="#" style="color: #1e6295;">
+            <i class="fa-solid fa-headset" style="margin-right: 4px;"></i>
+            0792161123 / 0792151123
+          </a>
+        </div>
+      </nav>
+      <div class="container">
+          <div class="container-sidebar">
+            <div class="sidebar-wrapper">
+              <div class="sidebar-header">Nội dung bài viết</div>
+              <div class="sidebar-content">
+                <div class="sidebar-item">
+                  <a href="#intro">I. Giới thiệu</a>
                 </div>
-                <div class="sidebar-sub-item">
-                  <a href="#user-share">2. Chia sẻ/ Dừng chia sẻ hành trình</a>
+                <div class="sidebar-item">
+                  <a href="#user">II. Vai trò Người dùng</a>
+                  <div class="sidebar-sub-item">
+                    <a href="#user-login">1. Đăng nhập</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#user-share">2. Chia sẻ/ Dừng chia sẻ hành trình</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#user-view">3. Xem lại hành trình</a>
+                  </div>
                 </div>
-                <div class="sidebar-sub-item">
-                  <a href="#user-view">3. Xem lại hành trình</a>
-                </div>
-              </div>
-              <div class="sidebar-item">
-                <a href="#admin">III. Vai trò Quản trị viên</a>
-                <div class="sidebar-sub-item">
-                  <a href="#admin-login">1. Đăng nhập</a>
-                </div>
-                <div class="sidebar-sub-item">
-                  <a href="#admin-view">2. Xem hành trình</a>
-                </div>
-                <div class="sidebar-sub-item">
-                  <a href="#admin-view-his">3. Xem nhật ký di chuyển và xuất excel</a>
-                </div>
-                <div class="sidebar-sub-item">
-                  <a href="#admin-view-his-log">4. Xem nhật ký đăng nhập/ đăng xuất và xuất excel</a>
-                </div>
-                <div class="sidebar-sub-item">
-                  <a href="#admin-create">5. Tạo người dùng mới</a>
-                </div>
-                <div class="sidebar-sub-item">
-                  <a href="#admin-list-user">6. Xem danh sách nhân viên</a>
+                <div class="sidebar-item">
+                  <a href="#admin">III. Vai trò Quản trị viên</a>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-login">1. Đăng nhập</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-view">2. Xem hành trình</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-view-his">3. Xem nhật ký di chuyển và xuất excel</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-view-his-log">4. Xem nhật ký đăng nhập/ đăng xuất và xuất excel</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-create">5. Tạo người dùng mới</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-list-user">6. Xem danh sách nhân viên</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container-content">
-          <h2 style="text-align: center">HƯỚNG DẪN SỬ DỤNG ỨNG DỤNG GEOPRO</h2>
-          <ol type="I" >
-            <li id="intro">
-              <span>Giới thiệu</span>
-              <div class="li-content">
-                <p>
-                  Ứng dụng <b>Theo dõi Hành trình GeoPro</b> là một công cụ mạnh mẽ
-                  giúp bạn quản lý và giám sát hành trình di chuyển của con cái,
-                  người thân, phương tiện, và nhân viên một cách nhanh chóng và hiệu
-                  quả. Đặc biệt, ứng dụng còn cho phép cập
-                  nhật liên tục và lưu lại lịch sử di chuyển, giúp bạn có thể xem
-                  lại khi cần thiết. <br /><br />
-                  Bạn không cần lo lắng về việc xâm phạm quyền riêng tư của người
-                  khác, vì phần mềm yêu cầu sự đồng ý rõ ràng từ các thành viên
-                  trước khi cho phép theo dõi trên ứng dụng. Cách thức hoạt động của
-                  ứng dụng cũng rất đơn giản: Người dùng chỉ cần đăng nhập vào ứng
-                  dụng, và bạn sẽ nhận được vị trí cập nhật của họ ngay lập tức.
-                </p> 
-                <div class="img-wrapper">
-                  <img style="width: 50%" src="./img/share.png" />
-                  <img style="width: 50%" src="./img/hanhTrinh.png" alt="" />
+          <div class="container-content">
+            <h2>HƯỚNG DẪN SỬ DỤNG ỨNG DỤNG GEOPRO</h2>
+            <div class="main-content-wrapper">
+              <div class="sidebar-header">Nội dung bài viết</div>
+              <div class="sidebar-content">
+                <div class="sidebar-item">
+                  <a href="#intro">I. Giới thiệu</a>
+                </div>
+                <div class="sidebar-item">
+                  <a href="#user">II. Vai trò Người dùng</a>
+                  <div class="sidebar-sub-item">
+                    <a href="#user-login">1. Đăng nhập</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#user-share">2. Chia sẻ/ Dừng chia sẻ hành trình</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#user-view">3. Xem lại hành trình</a>
+                  </div>
+                </div>
+                <div class="sidebar-item">
+                  <a href="#admin">III. Vai trò Quản trị viên</a>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-login">1. Đăng nhập</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-view">2. Xem hành trình</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-view-his">3. Xem nhật ký di chuyển và xuất excel</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-view-his-log">4. Xem nhật ký đăng nhập/ đăng xuất và xuất excel</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-create">5. Tạo người dùng mới</a>
+                  </div>
+                  <div class="sidebar-sub-item">
+                    <a href="#admin-list-user">6. Xem danh sách nhân viên</a>
+                  </div>
                 </div>
               </div>
-            </li>       
-            <li>
-              <span id="user">Vai trò Người dùng</span>
-              <ol type="1">
-                <li id="user-login">
-                  <span>Đăng nhập</span>
-                  <div class="li-content">
-                    <p>Bước 1: Đăng nhập vào ứng dụng với tài khoản đã được cấp.</p>
-                    <p>Bước 2: Nhập tên đăng nhập và mật khẩu.</p>
-                    <p>Bước 3: Chọn <b>Đăng nhập</b>.</p>
-                    <div class="img-wrapper">
-                      <img
-                        style="width: 40%"
-                        src="./img/userLogin.png"
-                      />
-                    </div>
+            </div>
+            <ol type="I" >
+              <li id="intro">
+                <span>Giới thiệu</span>
+                <div class="li-content">
+                  <p>
+                    Ứng dụng <b>Theo dõi Hành trình GeoPro</b> là một công cụ mạnh mẽ
+                    giúp bạn quản lý và giám sát hành trình di chuyển của con cái,
+                    người thân, phương tiện, và nhân viên một cách nhanh chóng và hiệu
+                    quả. Đặc biệt, ứng dụng còn cho phép cập nhật liên tục và lưu lại lịch sử di chuyển, giúp bạn có thể xem
+                    lại khi cần thiết. <br /><br />
+                    Bạn không cần lo lắng về việc xâm phạm quyền riêng tư của người
+                    khác, vì ứng dụng yêu cầu sự đồng ý rõ ràng từ tất cả các thành viên 
+                    trước khi bật tính năng theo dõi. Ngoài ra, chúng tôi cũng cung cấp dịch vụ theo dõi hành trình
+                    mà không có sự chấp thuận từ các thành viên khác nếu bạn có nhu cầu. 
+                    Cách thức hoạt động của ứng dụng cũng rất đơn giản: Người dùng chỉ cần đăng nhập vào ứng
+                    dụng, và bạn sẽ nhận được vị trí cập nhật của họ ngay lập tức.
+                  </p> 
+                  <div class="img-wrapper">
+                    <img src="./img/intro.png" />
                   </div>
-                </li>
-                <li id="user-share">
-                  <span>Chia sẻ/ Dừng chia sẻ hành trình</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Sau khi đăng nhập chọn
-                      <b>Bắt đầu chia sẻ vị trí</b> để gửi định vị hoặc chọn
-                      <b>Dừng chia sẻ vị trí / Log out</b>
-                      để dừng chia sẻ vị trí
-                    </p>
-                    <div class="img-wrapper">
-                      <img style="width: 40%" src="./img/share.png" />
+                </div>
+              </li>       
+              <li>
+                <span id="user">Vai trò Người dùng</span>
+                <ol type="1">
+                  <li id="user-login">
+                    <span>Đăng nhập</span>
+                    <div class="li-content">
+                      <p>Bước 1: Đăng nhập vào ứng dụng với tài khoản đã được cấp.</p>
+                      <p>Bước 2: Nhập tên đăng nhập và mật khẩu.</p>
+                      <p>Bước 3: Chọn <b>Đăng nhập</b>.</p>
+                      <div class="img-wrapper">
+                        <img
+                          style="width: 40%"
+                          src="./img/userLogin.png"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li id="user-view">
-                  <span>Xem lại hành trình</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Sau khi đăng nhập chọn
-                      <b>Xem lại hành trình</b> để xem lại hành trình của chính mình
-                      theo ngày cụ thể
-                    </p>
-                    <div class="img-wrapper">
-                      <img style="width: 40%" src="./img/share.png" />
+                  </li>
+                  <li id="user-share">
+                    <span>Chia sẻ/ Dừng chia sẻ hành trình</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Sau khi đăng nhập chọn
+                        <b>Bắt đầu chia sẻ vị trí</b> để gửi định vị hoặc chọn
+                        <b>Dừng chia sẻ vị trí / Log out</b>
+                        để dừng chia sẻ vị trí
+                      </p>
+                      <div class="img-wrapper">
+                        <img style="width: 40%" src="./img/share.png" />
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ol>
-            </li>
-            <li>
-              <span id="admin">Vai trò Quản trị viên</span>
-              <ol type="1">
-                <li id="admin-login">
-                  <span>Đăng nhập</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Đăng nhập vào ứng dụng với tài khoản quản trị viên.
-                    </p>
-                    <p>Bước 2: Nhập tên đăng nhập và mật khẩu.</p>
-                    <p>Bước 3: Chọn <b>Đăng nhập</b>.</p>
-                    <div class="img-wrapper">
-                      <img src="./img/login.png" />
+                  </li>
+                  <li id="user-view">
+                    <span>Xem lại hành trình</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Sau khi đăng nhập chọn
+                        <b>Xem lại hành trình</b> để xem lại hành trình của chính mình
+                        theo ngày cụ thể
+                      </p>
+                      <div class="img-wrapper">
+                        <img style="width: 40%" src="./img/share.png" />
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li id="admin-view">
-                  <span>Xem hành trình</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Tại thanh điều hướng chọn <b>Nhân sự</b>
-                    </p>
-                    <p></p>
-                      Bước 2: Chọn vào biểu tượng màu xanh ở cột <b>Ngày cấp</b> tại tài khoản cần xem hành trình
-                    </p>
-                    <div class="img-wrapper">
-                      <img src="./img/chooseUser.png" />
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <span id="admin">Vai trò Quản trị viên</span>
+                <ol type="1">
+                  <li id="admin-login">
+                    <span>Đăng nhập</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Đăng nhập vào ứng dụng với tài khoản quản trị viên.
+                      </p>
+                      <p>Bước 2: Nhập tên đăng nhập và mật khẩu.</p>
+                      <p>Bước 3: Chọn <b>Đăng nhập</b>.</p>
+                      <div class="img-wrapper">
+                        <img src="./img/login.png" />
+                      </div>
                     </div>
-                    <p>Bước 3: Chọn <b>Xem lịch trình di chuyển</b>.</p>
-                    <p>
-                      Bước 4: Nhập thời gian cần xem
-                      <i class="fa-solid fa-arrow-right"></i>
-                      <b>Xem hành trình</b>
-                    </p>
-                    <div class="img-wrapper">
-                      <img src="./img/xemHanhTrinh.png" />
+                  </li>
+                  <li id="admin-view">
+                    <span>Xem hành trình</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Tại thanh điều hướng chọn <b>Nhân sự</b>
+                      </p>
+                      <p></p>
+                        Bước 2: Chọn vào biểu tượng màu xanh ở cột <b>Ngày cấp</b> tại tài khoản cần xem hành trình
+                      </p>
+                      <div class="img-wrapper">
+                        <img src="./img/chooseUser.png" />
+                      </div>
+                      <p>Bước 3: Chọn <b>Xem lịch trình di chuyển</b>.</p>
+                      <p>
+                        Bước 4: Nhập thời gian cần xem
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <b>Xem hành trình</b>
+                      </p>
+                      <div class="img-wrapper">
+                        <img src="./img/xemHanhTrinh.png" />
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li id="admin-view-his">
-                  <span>Xem nhật ký di chuyển và xuất excel</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Tại thanh điều hướng chọn
-                      <b>Nhật ký di chuyển</b> hoặc tại màn hình
-                      <b>Danh sách nhân viên</b> nhấn vào nút màu xanh ở cột
-                      <b>Ngày cấp</b>
-                    </p>
-                    <p>Bước 2: Chọn người dùng và chọn thời gian cần xem</p>
-                    <p>
-                      Bước 3: Chọn <b>Tìm kiếm</b> để xem danh sách thông tin lịch
-                      trình hoặc <b>Xuất Excel</b> để tải danh sách thông tin lịch
-                      trình về máy
-                    </p>
-                    <div class="img-wrapper">
-                      <img src="./img/nhatKyDiChuyen.png" />
+                  </li>
+                  <li id="admin-view-his">
+                    <span>Xem nhật ký di chuyển và xuất excel</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Tại thanh điều hướng chọn
+                        <b>Nhật ký di chuyển</b> hoặc tại màn hình
+                        <b>Danh sách nhân viên</b> nhấn vào nút màu xanh ở cột
+                        <b>Ngày cấp</b>
+                      </p>
+                      <p>Bước 2: Chọn người dùng và chọn thời gian cần xem</p>
+                      <p>
+                        Bước 3: Chọn <b>Tìm kiếm</b> để xem danh sách thông tin lịch
+                        trình hoặc <b>Xuất Excel</b> để tải danh sách thông tin lịch
+                        trình về máy
+                      </p>
+                      <div class="img-wrapper">
+                        <img src="./img/nhatKyDiChuyen.png" />
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li id="admin-view-his-log">
-                  <span>Xem nhật ký đăng nhập/ đăng xuất và xuất excel</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Tại thanh điều hướng chọn 
-                      <b>Nhật ký Login/ Log out</b>
-                    </p>
-                    <p>Bước 2: Chọn người dùng và chọn thời gian cần xem</p>
-                    <p>
-                      Bước 3: Chọn <b>Tìm kiếm</b> để xem danh sách thông tin nhật
-                      ký hoặc <b>Xuất Excel</b> để tải danh sách thông tin nhật ký
-                      về máy
-                    </p>
-                    <div class="img-wrapper">
-                      <img src="./img/nhatkyLoginOut.png" />
+                  </li>
+                  <li id="admin-view-his-log">
+                    <span>Xem nhật ký đăng nhập/ đăng xuất và xuất excel</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Tại thanh điều hướng chọn 
+                        <b>Nhật ký Login/ Log out</b>
+                      </p>
+                      <p>Bước 2: Chọn người dùng và chọn thời gian cần xem</p>
+                      <p>
+                        Bước 3: Chọn <b>Tìm kiếm</b> để xem danh sách thông tin nhật
+                        ký hoặc <b>Xuất Excel</b> để tải danh sách thông tin nhật ký
+                        về máy
+                      </p>
+                      <div class="img-wrapper">
+                        <img src="./img/nhatkyLoginOut.png" />
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li id="admin-create">
-                  <span>Tạo người dùng mới</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Tại thanh điều hướng chọn
-                      <b>Nhân sự </b>
-                    </p>
-                    <p>Bước 2: Chọn <b>Nhập</b></p>
-                    <p>
-                      Bước 3: Nhập các thông tin nhân viên theo biểu mẫu
-                      <i class="fa-solid fa-arrow-right"></i>
-                      <b>Thêm mới</b>
-                    </p>
-                    <div class="img-wrapper">
-                      <img src="./img/TaoNV.png" />
+                  </li>
+                  <li id="admin-create">
+                    <span>Tạo người dùng mới</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Tại thanh điều hướng chọn
+                        <b>Nhân sự </b>
+                      </p>
+                      <p>Bước 2: Chọn <b>Nhập</b></p>
+                      <p>
+                        Bước 3: Nhập các thông tin nhân viên theo biểu mẫu
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <b>Thêm mới</b>
+                      </p>
+                      <div class="img-wrapper">
+                        <img src="./img/TaoNV.png" />
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li id="admin-list-user">
-                  <span>Xem danh sách nhân viên</span>
-                  <div class="li-content">
-                    <p>
-                      Bước 1: Tại thanh điều hướng chọn 
-                      <b>Nhân sự</b> để xem.
-                    </p>
-                    <div class="img-wrapper">
-                      <img src="./img/DSNV.png" />
+                  </li>
+                  <li id="admin-list-user">
+                    <span>Xem danh sách nhân viên</span>
+                    <div class="li-content">
+                      <p>
+                        Bước 1: Tại thanh điều hướng chọn 
+                        <b>Nhân sự</b> để xem.
+                      </p>
+                      <div class="img-wrapper">
+                        <img src="./img/DSNV.png" />
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </div>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+      </div>
     </div>
   </body>
 </html>
