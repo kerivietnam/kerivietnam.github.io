@@ -3725,7 +3725,7 @@
 </head>
 
 <body>
-    <div id="appMountPoint">
+    <div id="appMountPoint" style="overflow-x: hidden;">
         <div class="basicLayout">
             <div class="netflix-sans-font-loaded">
                 <div data-uia="loc" lang="vi" dir="ltr">
@@ -3901,71 +3901,59 @@
                                     </div>
                                     <!-- Phần bài -->
                                     <!-- Phần mềm HOT -->
-									<!--
                                     <div class="default-ltr-cache-dm6jit e1yzhtxy5"
-                                    data-uia="nmhp-card-animation+watchOnDevice">
-                                    <div class="default-ltr-cache-b2rltc e1yzhtxy0">
-                                        <div class="default-ltr-cache-tmevzf e1yzhtxy4">
-                                            <h2 data-uia="nmhp-card-animation-text-title"
-                                                class="default-ltr-cache-19f4kxn e1yzhtxy7" style="color: rgb(239, 8, 8);">
-                                                HOT
-                                            </h2>
-                                            <p data-uia="nmhp-card-animation-text-subtitle"
-                                                class="default-ltr-cache-1ndpmgo e1yzhtxy6">
-												<a href="./app/geopro/index.html" style="font-weight: bold; text-decoration: none; color: #000; cursor: pointer">Ứng dụng GeoPro Tracker</a>
-                                                <b>Ứng dụng GeoPro Tracker</b>
-                                            </p>
-                                            <p data-uia="nmhp-card-animation-text-subtitle"
-                                                class="default-ltr-cache-2ndpmgo e1yzhtxy6">
-                                                <b>Theo dõi Hành trình</b>
-                                            </p>
-                                            <p data-uia="nmhp-card-animation-text-subtitle"
-                                                class="default-ltr-cache-2ndpmgo e1yzhtxy6">
-                                                Ứng dụng quản lý và giám sát hành trình di chuyển của con cái, người thân, phương tiện, và nhân viên một cách nhanh chóng và hiệu quả mà không cần kết nối mạng. 
-                                            </p>
-                                            <div class="default-ltr-cache-1asgq30 e1yzhtxy3">
-                                                <img src="./Netflix Việt Nam – Xem chương trình truyền hình trực tuyến, Xem phim trực tuyến_files/transparent_1x1.png"
-                                                    aria-hidden="true" alt="" style="position: absolute" />
-                                                <div class="center-pixel" style="position: absolute"></div>
+                                        data-uia="nmhp-card-animation+watchOnDevice" >
+                                        <div class="default-ltr-cache-b2rltc e1yzhtxy0">
+                                            <div class="default-ltr-cache-tmevzf e1yzhtxy4">
+                                                <h2 data-uia="nmhp-card-animation-text-title"
+                                                    class="default-ltr-cache-19f4kxn e1yzhtxy7 hot-title">
+                                                    <span>
+                                                        <i class="fas fa-fire"></i>
+                                                    </span>
+                                                    HOT
+                                                </h2>
+                                                <p data-uia="nmhp-card-animation-text-subtitle"
+                                                    class="default-ltr-cache-1ndpmgo e1yzhtxy6">
+                                                    <a href="./app/geopro/index.html" class="instruction-link">Ứng dụng GeoPro Tracker</a>
+                                                </p>
+                                                <p data-uia="nmhp-card-animation-text-subtitle"
+                                                    class="default-ltr-cache-2ndpmgo e1yzhtxy6">
+                                                    <b>Theo dõi Hành trình</b>
+                                                </p>
+                                                <p data-uia="nmhp-card-animation-text-subtitle"
+                                                    class="default-ltr-cache-2ndpmgo e1yzhtxy6">
+                                                    Ứng dụng quản lý và giám sát hành trình di chuyển của con cái, người thân, phương tiện, và nhân viên một cách nhanh chóng và hiệu quả. 
+                                                </p>
+                                                <!-- <div class="default-ltr-cache-1asgq30 e1yzhtxy3">
+                                                    <img src="./Netflix Việt Nam – Xem chương trình truyền hình trực tuyến, Xem phim trực tuyến_files/transparent_1x1.png"
+                                                        aria-hidden="true" alt="" style="position: absolute" />
+                                                    <div class="center-pixel" style="position: absolute"></div>
+                                                </div> -->
                                             </div>
-                                        </div>
-                                        <div class="default-ltr-cache-vgp0nn e1yzhtxy2">
-                                            <div class="default-ltr-cache-bjn8wh" style="position: relative;">
-                                                <img alt="" src="./image/vien_dien_thoai.png"
-                                                    data-uia="nmhp-card-animation-asset-image"
-                                                    class="default-ltr-cache-1d3w5wq"
-                                                    style="position: relative; z-index: 1; width: auto; height: 80vh;" />
-                                                <img alt="" src="./app/geopro/img/mask.png"
-                                                    style="position: absolute; z-index: 1; left: 28%; top: 10%; border-radius: 16px; width: auto"
-                                                    height="85%" class="image_software" id="image-hot-mask" />
-                                                <img src="./image/button_play.png" alt="" srcset=""
-                                                    data-uia="nmhp-card-animation-asset-image"
-                                                    style="position: absolute; left: 30%; top: 30%; z-index: 2; object-fit: cover" width="40%"
-                                                    height="40%" class="image_1" onclick="showVideo(0)">
-                                                <div class="video-overlay"
-                                                    style="position: absolute; z-index: 4; top: 3%; left: 7%; width: 43%; height: 100%;">
-                                                    <video data-uia="nmhp-card-animation-asset-video" autoplay
-                                                        playsinline muted loop controls
-                                                        style="position: absolute; width: 100%; height: 96%;">
-                                                        <source src="./app/geopro/intro.mp4" type="video/mp4" />
-                                                        Your browser does not support the video tag.
-                                                    </video>
-                                                </div>
+                                            <div class="default-ltr-cache-vgp0nn e1yzhtxy2">
+                                                <div class="default-ltr-cache-bjn8wh" style="position: relative;">
+                                                    <img alt="" src="./image/phanmemtracker.png"
+                                                        data-uia="nmhp-card-animation-asset-image"
+                                                        class="default-ltr-cache-1d3w5wq hot-mask" />
+                                                    <img src="./image/button_play.png" alt="" srcset=""
+                                                        data-uia="nmhp-card-animation-asset-image"
+                                                        style="position: absolute; left: 30%; top: 24%; object-fit: cover;" width="40%"
+                                                        height="40%" class="image_1" onclick="showVideo(0)">
+                                                    <div class="video-overlay video-hot-overlay">
+                                                        <video data-uia="nmhp-card-animation-asset-video" autoplay
+                                                            playsinline muted loop controls
+                                                            class="video-hot">
+                                                            <source src="./app/geopro/intro.mp4" type="video/mp4" />
+                                                            Your browser does not support the video tag.
+                                                        </video>
+                                                    </div>
 
-                                            </div>
-                                            <div class="video-overlay" id="videoOverlay">
-                                                <video controls>
-                                                    <source src="./app/geopro/intro.mp4" type="video/mp4">
-                                                    Your browser does not support the video tag.
-                                                </video>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div data-uia="nmhp-card-animation+watchOnDevice+divider"
+                                            class="default-ltr-cache-1yz1b0z"></div>
                                     </div>
-                                    <div data-uia="nmhp-card-animation+watchOnDevice+divider"
-                                        class="default-ltr-cache-1yz1b0z"></div>
-                                    </div>
-									-->
-                                    <!-- Phần bài -->
                                     <!-- Phần mềm 1 -->
                                     <div id="vietphongphu" class=" default-ltr-cache-dm6jit e1yzhtxy5"
                                         data-uia="nmhp-card-animation+downloadAndWatch">
@@ -5055,7 +5043,7 @@
 
     <script>
         for (let i = 1; i <= 4; i++) {
-            $(`.owl-item${i}`).owlCarousel({     
+            $(`.owl-item${i}`).owlCarousel({
                 loop: true,
                 margin: 10,
                 nav: true,
