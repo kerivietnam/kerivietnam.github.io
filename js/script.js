@@ -181,10 +181,15 @@ window.addEventListener("load", function () {
 function showVideo(x) {
   // Lấy ra tất cả các phần tử có class "image_1"
   var images = document.getElementsByClassName("image_1");
+
   // Duyệt qua từng phần tử và ẩn nút play, hiển thị video overlay cho phần tử được nhấn
   for (let i = 0; i < images.length; i++) {
-    // Nếu là phần tử được nhấn (x là số thứ tự của phần tử bắt đầu từ 1)
+    // Nếu là phần tử được nhấn (x là số thứ tự của phần tử bắt đầu từ 0)
     if (i === x) {
+      var hotMask = images[i].parentNode.querySelector(".hot-mask");
+      if (hotMask) {
+        hotMask.style.opacity = 0;
+      }
       // Tìm video overlay của phần tử được nhấn và hiển thị (phần tử có class default-ltr-cache-bjn8wh)
       var videoOverlay = images[i].parentNode.querySelector(".video-overlay");
       videoOverlay.style.display = "block";
