@@ -11,16 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NNMNZ9PFNH">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"
+      rel="stylesheet"
+    />
 
-  gtag('config', 'G-NNMNZ9PFNH');
-</script>
     <style>
       * {
         margin: 0;
@@ -29,16 +26,21 @@
       }
       body {
         font-family: "Roboto", sans-serif;
-        background-color: #f0f4f8;
+        background-color: #f1efef;
         color: #333;
         line-height: 1.6;
+        margin: auto;
+      }
+      .wrapper {
+        width: 100%;
+        margin: auto;
       }
       .header-nav {
         position: fixed;
         width: 100%;
         z-index: 10;
         background: #fff;
-        height: 64px;
+        height: 48px;
         display: flex;
         align-items: center;
         padding: 8px 24px;
@@ -53,7 +55,7 @@
         color: #1e6295;
       }
       .logo {
-        font-size: 3em;
+        font-size: 2.6rem;
         font-weight: 900;
         font-family: "Bruno Ace SC", cursive;
         letter-spacing: -9px;
@@ -64,20 +66,21 @@
         font-size: 1rem;
       }
       .container {
+        width: 100%;
         display: flex;
-        max-width: 1200px;
         padding: 20px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin: auto;
       }
       .container-content {
+        width: 100%;
         margin-left: 30%;
         margin-top: 90px;
       }
       .container-sidebar {
         width: 25%;
-        position: -webkit-sticky;
         position: fixed;
         top: 120px;
       }
@@ -176,10 +179,6 @@
         text-decoration: none;
         cursor: pointer;
       }
-      a:hover {
-        color: #1b5789;
-        text-decoration: underline;
-      }
       p > strong {
         color: #1b5789;
       }
@@ -217,9 +216,6 @@
           <span style="color: #ebd803">I</span>
         </a>
         <div class="right-nav-item">
-          <!-- <a href="/HDMuaHang/huongDan.html" class="header-nav-item"
-            >Hướng Dẫn Mua Hàng</a
-          > -->
           <a href="#" style="color: #1e6295">
             <i class="fa-solid fa-headset" style="margin-right: 4px"></i>
             0792161123 / 0792151123
