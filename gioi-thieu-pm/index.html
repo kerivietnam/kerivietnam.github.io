@@ -38,7 +38,8 @@
         font-weight: bold;
         color: rgba(62, 47, 138, 0.8);
       }
-      img {
+      img,
+      video {
         width: 100%;
         object-fit: contain;
         border-radius: 8px;
@@ -65,9 +66,13 @@
         color: #1e1e1e;
         line-height: 1.4;
       }
+      .hide {
+        display: none;
+      }
       @media screen and (max-width: 768px) {
         .item {
           flex-direction: column;
+          height: auto;
         }
         .revert-col {
           flex-direction: column-reverse !important;
@@ -153,43 +158,47 @@
             </div>
           </div>
         </a>
-        <a href="#" target="_blank">
-          <div class="item">
-            <div class="w-70">
-              <img src="./img/van-thu-luu-tru.png" alt="văn thư lưu trữ" />
-            </div>
-            <div class="w-30 pl-40">
-              <span class="index">04</span>
-              <div class="title">Văn Thư Lưu Trữ</div>
-            </div>
+        <div class="item item-inline">
+          <div class="w-70">
+            <img src="./img/van-thu-luu-tru.png" alt="văn thư lưu trữ" />
+            <video class="hide" src="./video/van-thu.mp4" controls></video>
           </div>
-        </a>
+          <div class="w-30 pl-40">
+            <span class="index">04</span>
+            <div class="title">Văn Thư Lưu Trữ</div>
+          </div>
+        </div>
+        <div class="item item-inline">
+          <div class="w-30 pl-40">
+            <span class="index">05</span>
+            <div class="title">Quản Lý Bán Hàng Doanh Nghiệp</div>
+          </div>
+          <div class="w-70">
+            <img
+              src="./img/ban-hang-doanh-nghiep.png"
+              alt="bán hàng doanh nghiệp"
+            />
+            <video
+              class="hide"
+              src="./video/ban-hang-doanh-nghiep.mp4"
+              controls
+            ></video>
+          </div>
+        </div>
         <a href="#" target="_blank">
           <div class="item">
-            <div class="w-30">
-              <span class="index">05</span>
-              <div class="title">Quản Lý Chung Cư</div>
-            </div>
             <div class="w-70">
               <img
                 src="./img/2. Quản lý chung cư - Giúp quản lý nhà cho thuê, tiền cho thuê, khách hàng cho thuê, tạo tài khoản cho nhân sự.png"
                 alt="Chung cư"
               />
             </div>
-          </div>
-        </a>
-          <div class="item">
-            <div class="w-70">
-              <img
-                src="./img/3. Phần mềm quản lý sản xuất ngành hàng cơ khí, quản lý nguyên vật liệu, khách hàng, doanh thu, quy trình sản xuất cơ khí.png"
-                alt="Aladin"
-              />
-            </div>
             <div class="w-30 pl-40">
               <span class="index">06</span>
-              <div class="title">Quản Lý Bán Hàng Doanh Nghiệp</div>
+              <div class="title">Quản Lý Chung Cư</div>
             </div>
           </div>
+        </a>
         <a href="#" target="_blank">
           <div class="item">
             <div class="w-30">
