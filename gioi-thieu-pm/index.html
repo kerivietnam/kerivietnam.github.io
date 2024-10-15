@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tổng quan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .container {
+        width: 100%;
+      }
+      a {
+        text-decoration: none;
+        color: rgba(62, 47, 138, 0.8);
+        cursor: pointer;
+      }
+      .index {
+        font-family: "Pacifico", sans-serif;
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+      .title {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+      .item {
+        display: flex;
+        padding: 20px;
+        height: 450px;
+        align-items: center;
+      }
+      .item.bg-primary {
+        background-color: rgba(62, 47, 138, 0.3);
+      }
+      .w-30 {
+        width: 40%;
+      }
+      .w-70 {
+        width: 60%;
+      }
+      .pl-40 {
+        padding-left: 40px;
+      }
+      .item-desc {
+        color: #1e1e1e;
+        line-height: 1.4;
+      }
+      @media screen and (max-width: 768px) {
+        .item {
+          flex-direction: column;
+        }
+        .revert-col {
+          flex-direction: column-reverse !important;
+        }
+        .w-70 {
+          width: 100%;
+        }
+        .w-30 {
+          width: 100%;
+        }
+        img {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        margin: 40px 0 20px 0;
+        color: rgba(62, 47, 138, 0.8);
+      "
+    >
+      Danh sách phần mềm
+    </h1>
+    <div class="container">
+      <div class="list-item">
+        <a href="./NamPhuongFood/index.html" target="_blank">
+          <div class="item">
+            <div class="w-30">
+              <span class="index">01</span>
+              <div class="title">Nam Phương Food</div>
+              <br />
+              <div class="item-desc">
+                - Đăng nhập, Tạo thông tin Nhân sự <br />
+                - Kinh doanh & Xuất nhập khẩu <br />
+                - Quản lý CRM - Mua hàng <br />
+              </div>
+            </div>
+            <div class="w-70">
+              <img src="./img/nam-phuong-food.jpg" alt="Nam Phương Food" />
+            </div>
+          </div>
+        </a>
+        <a href="./OtoPhuMan/index.html" target="_blank">
+          <div class="item">
+            <div class="w-70">
+              <img src="./img/oto-phu-man.jpg" alt="Ô Tô Phú Mẫn" />
+            </div>
+            <div class="w-30 pl-40">
+              <span class="index">02</span>
+              <div class="title">Ô Tô Phú Mẫn</div>
+              <br />
+              <div class="item-desc">
+                - Đăng nhập <br />
+                - Quản lý khách hàng <br />
+                - Bán hàng dịch vụ <br />
+                - Bán xe <br />
+                - Thống kê<br />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./GioiThieuUngDung/index.html" target="_blank">
+          <div class="item">
+            <div class="w-30">
+              <span class="index">03</span>
+              <div class="title">Quản Lý Trường Học</div>
+              <br />
+              <div class="item-desc">
+                - Đăng nhập <br />
+                - Quản lý học sinh <br />
+                - Quản lý điểm <br />
+                - Quản lý học phí <br />
+              </div>
+            </div>
+            <div class="w-70">
+              <img
+                src="./img/1. Aladin - Phần mềm quảng lý xuất nhập kho, quản lý thu chi các khoản của doanh nghiệp, tạo tài khoản nhân sự.png"
+                alt="AI School"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-70">
+              <img src="./img/van-thu-luu-tru.png" alt="văn thư lưu trữ" />
+            </div>
+            <div class="w-30 pl-40">
+              <span class="index">04</span>
+              <div class="title">Văn Thư Lưu Trữ</div>
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-30">
+              <span class="index">05</span>
+              <div class="title">Quản Lý Chung Cư</div>
+            </div>
+            <div class="w-70">
+              <img
+                src="./img/2. Quản lý chung cư - Giúp quản lý nhà cho thuê, tiền cho thuê, khách hàng cho thuê, tạo tài khoản cho nhân sự.png"
+                alt="Chung cư"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-70">
+              <img
+                src="./img/3. Phần mềm quản lý sản xuất ngành hàng cơ khí, quản lý nguyên vật liệu, khách hàng, doanh thu, quy trình sản xuất cơ khí.png"
+                alt="Aladin"
+              />
+            </div>
+            <div class="w-30 pl-40">
+              <span class="index">06</span>
+              <div class="title">Quản Lý Cơ Khí</div>
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-30">
+              <span class="index">07</span>
+              <div class="title">Quản Lý Kế Toán</div>
+            </div>
+            <div class="w-70">
+              <img
+                src="./img/4. Phần mềm quản lý kế toán, bán hàng, lương, quy trình sản xuất của doanh nghiệp chế biến thủy hải sản.png"
+                alt="Kế toán"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-70">
+              <img
+                src="./img/5. Phần mềm quản lý nhân viên đi làm xa, gửi định vị về admin nhằm quản lý thời gian và vị trí nhân sự đi làm.png"
+                alt="nhân viên"
+              />
+            </div>
+            <div class="w-30 pl-40">
+              <span class="index">08</span>
+              <div class="title">Quản Lý Nhân Viên</div>
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-30">
+              <span class="index">09</span>
+              <div class="title">Môi Giới</div>
+            </div>
+            <div class="w-70">
+              <img
+                src="./img/6. Phần mềm môi giới - phần mềm trung gian giúp các bên cung cấp và bên có nhu cầu tương hợp vơi nhau.png"
+                alt="Môi Giới"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-70">
+              <img
+                src="./img/7. Phần mêm quản lý bảo trì - Quản lý công việc giao việc cho nhân viên, quản lý nhân viên đi làm từ xa, quản lý thiết bị, vật tư, KPI.png"
+                alt="Bảo trì"
+              />
+            </div>
+            <div class="w-30 pl-40">
+              <span class="index">10</span>
+              <div class="title">Quản Lý Bảo Trì</div>
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-30">
+              <span class="index">11</span>
+              <div class="title">Quản Lý Vận Đơn</div>
+            </div>
+            <div class="w-70">
+              <img
+                src="./img/8. Phần mềm quản lý vận đơn cho công ty vận chuyển quốc tế.png"
+                alt="Vận Đơn"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="item">
+            <div class="w-70">
+              <img
+                src="./img/1. Aladin - Phần mềm quảng lý xuất nhập kho, quản lý thu chi các khoản của doanh nghiệp, tạo tài khoản nhân sự.png"
+                alt="Aladin"
+              />
+            </div>
+            <div class="w-30 pl-40">
+              <span class="index">12</span>
+              <div class="title">Quản Lý Xuất Nhập Kho</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".item").forEach((item, index) => {
+        if (index % 2 !== 0) {
+          item.classList.add("bg-primary", "revert-col");
+        }
+      });
+    </script>
+  </body>
+</html>
