@@ -151,10 +151,7 @@
               </div>
             </div>
             <div class="w-70">
-              <img
-                src="./img/1. Aladin - Phần mềm quảng lý xuất nhập kho, quản lý thu chi các khoản của doanh nghiệp, tạo tài khoản nhân sự.png"
-                alt="AI School"
-              />
+              <img src="./img/AI.jpg" alt="AI School" />
             </div>
           </div>
         </a>
@@ -305,6 +302,16 @@
         if (index % 2 !== 0) {
           item.classList.add("bg-primary", "revert-col");
         }
+      });
+      document.querySelectorAll(".item-inline").forEach((item, index) => {
+        const img = item.querySelector("img");
+        const video = item.querySelector("video");
+
+        img.addEventListener("click", () => {
+          img.classList.add("hide");
+          video.classList.remove("hide");
+          video.play();
+        });
       });
     </script>
   </body>
