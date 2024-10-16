@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tổng quan</title>
+    <title>Danh sách dự án đã thực hiện</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&family=Pacifico&display=swap"
@@ -32,6 +32,7 @@
       }
       body {
         font-family: "Montserrat", sans-serif;
+        width: 100%;
       }
       /* header */
       .header-bg {
@@ -170,14 +171,17 @@
           flex-direction: row;
           align-items: center;
         }
-
+        .header-bg-title {
+          font-size: 1.75rem;
+        }
         .icon-item a {
           display: block;
         }
         .service-item a {
           display: none;
         }
-        .project-section {
+        .project-section,
+        .social-section {
           display: none;
         }
         .logo-section,
@@ -274,109 +278,109 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="header-bg">
-        <div class="header-container" style="top: 0px">
-          <!-- Logo Section -->
-          <span class="logo-section">
-            <a href="../index.html" class="logo">Keri</a>
-          </span>
-          <div class="d-flex justify-content-between align-items-center">
-            <!-- Project Section -->
-            <span class="project-section">
-              <div class="project-dropdown-container">
-                <div class="dropdown">
-                  <button
-                    class="bg-transparent text-white py-1 px-3 rounded dropdown-toggle"
-                    type="button"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                    id="project_big"
-                    aria-haspopup="true"
-                  >
-                    Dự án đã thực hiện
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="project_big">
-                    <a class="dropdown-item" href="#">Mobile App</a>
-                    <a class="dropdown-item" href="#">Web App</a>
-                    <a class="dropdown-item" href="#">Desktop</a>
+    <div class="project-container">
+      <header>
+        <div class="header-bg">
+          <div class="header-container" style="top: 0px">
+            <!-- Logo Section -->
+            <span class="logo-section">
+              <a href="../index.html" class="logo">Keri</a>
+            </span>
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Project Section -->
+              <span class="project-section">
+                <div class="project-dropdown-container">
+                  <div class="dropdown">
+                    <button
+                      class="bg-transparent text-white py-1 px-3 rounded dropdown-toggle"
+                      type="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      id="project_big"
+                      aria-haspopup="true"
+                    >
+                      Dự án đã thực hiện
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="project_big">
+                      <a class="dropdown-item" href="#">Mobile App</a>
+                      <a class="dropdown-item" href="#">Web App</a>
+                      <a class="dropdown-item" href="#">Desktop</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </span>
+              </span>
 
-            <!-- Training Section -->
-            <span class="training-section">
-              <div class="service-item">
-                <a
-                  href="../training.html"
-                  class="bg-transparent text-white py-1 px-3 rounded"
-                  >TRAINING</a
-                >
-              </div>
-              <div class="icon-item">
-                <a href="../training.html">
-                  <i
-                    class="bx bxs-graduation"
-                    style="font-size: 35px; color: white"
-                  ></i>
-                </a>
-              </div>
-            </span>
+              <!-- Training Section -->
+              <span class="training-section">
+                <div class="service-item">
+                  <a
+                    href="../training.html"
+                    class="bg-transparent text-white py-1 px-3 rounded"
+                    >TRAINING</a
+                  >
+                </div>
+                <div class="icon-item">
+                  <a href="../training.html">
+                    <i
+                      class="bx bxs-graduation"
+                      style="font-size: 35px; color: white"
+                    ></i>
+                  </a>
+                </div>
+              </span>
 
-            <!-- Profile Section -->
-            <span class="profile-section">
-              <div class="service-item">
-                <a
-                  href="../gioi-thieu-pm/index.html"
-                  class="bg-transparent text-white py-1 px-3 rounded"
-                  >PROFILE</a
-                >
-              </div>
-              <div class="icon-item">
-                <a href="../gioi-thieu-pm/index.html">
-                  <i
-                    class="bx bxs-graduation"
-                    style="font-size: 35px; color: white"
-                  ></i>
-                </a>
-              </div>
-            </span>
+              <!-- Profile Section -->
+              <span class="profile-section">
+                <div class="service-item">
+                  <a
+                    href="../gioi-thieu-pm/index.html"
+                    class="bg-transparent text-white py-1 px-3 rounded"
+                    >PROFILE</a
+                  >
+                </div>
+                <div class="icon-item">
+                  <a href="../gioi-thieu-pm/index.html">
+                    <i
+                      class="bx bxs-graduation"
+                      style="font-size: 35px; color: white"
+                    ></i>
+                  </a>
+                </div>
+              </span>
 
-            <!-- Social Media Section -->
-            <span class="social-section">
-              <ul class="social-links">
-                <li>
-                  <a href="#"><i class="bx bxl-facebook-circle"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bx bxl-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bx bxl-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bx bxl-youtube"></i></a>
-                </li>
-              </ul>
-            </span>
+              <!-- Social Media Section -->
+              <span class="social-section">
+                <ul class="social-links">
+                  <li>
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <div class="header-bg-content">
+            <h1 class="header-bg-title">PROJECT PROFILE</h1>
+            <p class="header-bg-sub-title">
+              Hơn 15 năm kinh nghiệm phát triển phần mềm
+            </p>
+            <div class="contact-wrapper">
+              <button role="button" class="contact-btn" type="submit">
+                SĐT/Zalo: 0792151123 hoặc 0792161123
+                <i class="bx bx-chevron-right" style="font-size: 1.5rem"></i>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="header-bg-content">
-          <h1 class="header-bg-title">PROJECT PROFILE</h1>
-          <p class="header-bg-sub-title">
-            Hơn 15 năm kinh nghiệm phát triển phần mềm
-          </p>
-          <div class="contact-wrapper">
-            <button role="button" class="contact-btn" type="submit">
-              SĐT/Zalo: 0792151123 hoặc 0792161123
-              <i class="bx bx-chevron-right" style="font-size: 1.5rem"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="project-container">
+      </header>
       <div class="list-item">
         <div class="item">
           <div class="w-30">
@@ -466,7 +470,7 @@
             ></video>
           </div>
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <div class="w-70">
             <img
               src="./img/2. Quản lý chung cư - Giúp quản lý nhà cho thuê, tiền cho thuê, khách hàng cho thuê, tạo tài khoản cho nhân sự.png"
@@ -561,7 +565,7 @@
               alt="Aladin"
             />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
