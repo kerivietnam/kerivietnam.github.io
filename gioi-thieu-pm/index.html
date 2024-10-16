@@ -34,11 +34,10 @@
         font-family: "Montserrat", sans-serif;
       }
       /* header */
-      /* Tổng quan */
       .header-bg {
         background: url(../image/Background.png) no-repeat center center/cover;
         width: 100%;
-        height: 600px;
+        height: 560px;
       }
       .header-container {
         display: flex;
@@ -46,13 +45,8 @@
         align-items: center;
         background-color: transparent;
         padding: 10px 20px;
-        /* position: fixed; */
         width: 100%;
-        top: 0;
-        z-index: 1000;
       }
-
-      /* Logo Section */
       .logo-section .logo {
         text-decoration: none;
         font-size: 3em;
@@ -61,23 +55,18 @@
         font-weight: 900;
         font-family: "Bruno Ace SC", cursive;
       }
-
-      /* Project Section */
       .project-section {
         display: flex;
         align-items: center;
       }
-
       .project-label {
         margin-right: 10px;
         color: white;
         font-size: 16px;
       }
-
       ul {
         margin: 0;
       }
-
       .dropdown .dropdown-toggle {
         background-color: transparent;
         border: none;
@@ -85,57 +74,45 @@
         font-size: 16px;
         cursor: pointer;
       }
-
       .dropdown-menu {
         background-color: #444;
         border: none;
       }
-
       .dropdown-item {
         color: white;
         padding: 8px 16px;
         text-decoration: none;
         display: block;
       }
-
       .dropdown-item:hover {
         background-color: #555;
       }
-
-      /* Training and Profile Section */
       .training-section,
       .profile-section {
         display: flex;
         align-items: center;
       }
-
       .icon-item a {
         display: none;
       }
-
       .service-item a,
       .icon-item a {
         color: white;
         text-decoration: none;
         padding: 8px 16px;
       }
-
       .service-item:hover {
         text-decoration: 1px underline #fff;
       }
-
       .service-item a:hover,
       .icon-item a:hover {
         background-color: #444;
         border-radius: 5px;
       }
-
-      /* Social Media Section */
       .social-section {
         display: flex;
         align-items: center;
       }
-
       .social-links {
         display: flex;
         gap: 15px;
@@ -152,7 +129,7 @@
       }
       .header-bg-content {
         height: 300px;
-        padding-top: 10%;
+        padding-top: 120px;
       }
       .header-bg-title {
         font-size: 2.25rem;
@@ -187,12 +164,11 @@
       .contact-btn:hover {
         background-color: #c11219;
       }
-
       /* Responsive */
       @media (max-width: 768px) {
         .header-container {
-          flex-direction: column;
-          align-items: flex-start;
+          flex-direction: row;
+          align-items: center;
         }
 
         .icon-item a {
@@ -201,9 +177,10 @@
         .service-item a {
           display: none;
         }
-
+        .project-section {
+          display: none;
+        }
         .logo-section,
-        .project-section,
         .training-section,
         .profile-section,
         .social-section {
@@ -214,9 +191,15 @@
           justify-content: center;
           width: 100%;
         }
+        .header-bg-content {
+          padding: 64px 20px 0 20px;
+        }
       }
 
       /* body */
+      .project-container {
+        width: 100%;
+      }
       a {
         text-decoration: none;
         color: rgba(62, 47, 138, 0.8);
@@ -283,6 +266,9 @@
         }
         img {
           margin-top: 20px;
+        }
+        .pl-40 {
+          padding-left: 0;
         }
       }
     </style>
@@ -390,7 +376,7 @@
         </div>
       </div>
     </header>
-    <div class="container-fluid">
+    <div class="project-container">
       <div class="list-item">
         <div class="item">
           <div class="w-30">
@@ -565,15 +551,15 @@
           </div>
         </div>
         <div class="item">
+          <div class="w-30 pl-40">
+            <span class="index">13</span>
+            <div class="title">Quản Lý Cơ Khí</div>
+          </div>
           <div class="w-70">
             <img
               src="./img/3. Phần mềm quản lý sản xuất ngành hàng cơ khí, quản lý nguyên vật liệu, khách hàng, doanh thu, quy trình sản xuất cơ khí.png"
               alt="Aladin"
             />
-          </div>
-          <div class="w-30 pl-40">
-            <span class="index">13</span>
-            <div class="title">Quản Lý Cơ Khí</div>
           </div>
         </div>
       </div>
