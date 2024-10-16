@@ -217,9 +217,6 @@
       }
 
       /* body */
-      .container {
-        width: 100%;
-      }
       a {
         text-decoration: none;
         color: rgba(62, 47, 138, 0.8);
@@ -251,7 +248,7 @@
         height: 450px;
         align-items: center;
       }
-      .item.bg-primary {
+      .item.bg-project-custom {
         background-color: rgba(62, 47, 138, 0.3);
       }
       .w-30 {
@@ -393,16 +390,7 @@
         </div>
       </div>
     </header>
-    <h1
-      style="
-        text-align: center;
-        margin: 40px 0 20px 0;
-        color: rgba(62, 47, 138, 0.8);
-      "
-    >
-      Danh sách phần mềm
-    </h1>
-    <div class="container">
+    <div class="container-fluid">
       <div class="list-item">
         <div class="item">
           <div class="w-30">
@@ -605,7 +593,7 @@
     <script>
       document.querySelectorAll(".item").forEach((item, index) => {
         if (index % 2 !== 0) {
-          item.classList.add("bg-primary", "revert-col");
+          item.classList.add("bg-project-custom", "revert-col");
         }
       });
       document.querySelectorAll(".item-inline").forEach((item, index) => {
