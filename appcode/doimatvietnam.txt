@@ -2,6 +2,6 @@
   "server_webadmin": "http://3.107.19.244:8080/doimatvietnam/",
   "server_webclient": "http://3.107.19.244:8080/doimatvietnam/",
   "server_apicheckin": "http://3.107.19.244:8080/doimatvietnam/",
-  "server_apicheckin": "http://3.107.19.244:8080/doimatvietnam/",
+  "server_apichat": "http://3.107.19.244:8080/doimatvietnam/",
   "server_apitoken": "http://3.107.19.244:8080/doimatvietnam/"
 }
