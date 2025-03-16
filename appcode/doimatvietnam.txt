@@ -1,6 +1,6 @@
 {
   "serverWebadmin": "http://3.107.19.244:8080/doimatvietnam/",
-  "serverWebclient": "http://3.107.19.244:8080/doimatvietnam/client/",
+  "serverWebclient": "http://3.107.19.244:8080/doimatvietnam/client/trangchinh.php",
   "serverApicheckin": "http://3.107.19.244:8080/doimatvietnam/api/checkin/",
   "serverApichat": "http://3.107.19.244:8080/doimatvietnam/api/chat/",
   "serverApitoken": "http://3.107.19.244:8080/doimatvietnam/api/savetoken/"
