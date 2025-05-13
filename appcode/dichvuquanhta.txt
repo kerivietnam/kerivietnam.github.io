@@ -1,0 +1,7 @@
+{
+  "serverWebadmin": "http://52.64.43.179:8080/namphuongfoods/",
+  "serverWebclient": "http://52.64.43.179:8080/namphuongfoods/",
+  "serverApicheckin": "http://52.64.43.179:8080/namphuongfoods/api/checkin/",
+  "serverApichat": "http://52.64.43.179:8080/namphuongfoods/api/chat/",
+  "serverApitoken": "http://52.64.43.179:8080/namphuongfoods/api/savetoken/"
+}
