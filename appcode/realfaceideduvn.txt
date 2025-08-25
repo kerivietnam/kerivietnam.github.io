@@ -1,7 +1,7 @@
 {
-  "serverWebadmin": "http://52.64.43.179:8080/truonghocthongminh/",
-  "serverWebclient": "http://52.64.43.179:8080/truonghocthongminh/",
-  "serverApicheckin": "http://52.64.43.179:8080/truonghocthongminh/api/checkin/",
-  "serverApichat": "http://52.64.43.179:8080/truonghocthongminh/api/chat/",
-  "serverApitoken": "http://52.64.43.179:8080/truonghocthongminh/api/savetoken/"
+  "serverWebadmin": "http://3.107.19.244:8080/truonghocthongminh/",
+  "serverWebclient": "http://3.107.19.244:8080/truonghocthongminh/",
+  "serverApicheckin": "http://3.107.19.244:8080/truonghocthongminh/api/checkin/",
+  "serverApichat": "http://3.107.19.244:8080/truonghocthongminh/api/chat/",
+  "serverApitoken": "http://3.107.19.244:8080/truonghocthongminh/api/savetoken/"
 }
