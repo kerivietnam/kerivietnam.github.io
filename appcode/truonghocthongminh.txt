@@ -1,7 +1,1 @@
-{
-  "serverWebadmin": "http://52.64.43.179:8080/truonghocthongminh/",
-  "serverWebclient": "http://52.64.43.179:8080/truonghocthongminh/",
-  "serverApicheckin": "http://52.64.43.179:8080/truonghocthongminh/api/checkin/",
-  "serverApichat": "http://52.64.43.179:8080/truonghocthongminh/api/chat/",
-  "serverApitoken": "http://52.64.43.179:8080/truonghocthongminh/api/savetoken/"
-}
+Là trong file realfaceideduvn.txt
