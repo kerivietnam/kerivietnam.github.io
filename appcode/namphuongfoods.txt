@@ -1,7 +1,7 @@
 {
-  "serverWebadmin": "http://34.177.86.222:8080/namphuongfoods/",
-  "serverWebclient": "http://34.177.86.222:8080/namphuongfoods/",
-  "serverApicheckin": "http://34.177.86.222:8080/namphuongfoods/api/checkin/",
-  "serverApichat": "http://34.177.86.222:8080/namphuongfoods/api/chat/",
-  "serverApitoken": "http://34.177.86.222:8080/namphuongfoods/api/savetoken/"
+  "serverWebadmin": "http://34.177.110.0:8080/namphuongfoods/",
+  "serverWebclient": "http://34.177.110.0:8080/namphuongfoods/",
+  "serverApicheckin": "http://34.177.110.0:8080/namphuongfoods/api/checkin/",
+  "serverApichat": "http://34.177.110.0:8080/namphuongfoods/api/chat/",
+  "serverApitoken": "http://34.177.110.0:8080/namphuongfoods/api/savetoken/"
 }
