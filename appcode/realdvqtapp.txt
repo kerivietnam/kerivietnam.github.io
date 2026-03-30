@@ -1,7 +1,7 @@
 {
-  "serverWebadmin": "http://34.177.110.0:8080/truonghocthongminh/",
-  "serverWebclient": "https://iuh-20039761-lebaophi.github.io/GlobalCare/",
-  "serverApicheckin": "http://34.177.110.0:8080/truonghocthongminh/api/checkin/",
-  "serverApichat": "http://34.177.110.0:8080/truonghocthongminh/api/chat/",
-  "serverApitoken": "http://34.177.110.0:8080/truonghocthongminh/api/savetoken/"
+  "serverWebadmin": "http://35.240.166.93:8080/truonghocthongminh/",
+  "serverWebclient": "https://dichvuquanhta.vn/",
+  "serverApicheckin": "http://35.240.166.93:8080/truonghocthongminh/api/checkin/",
+  "serverApichat": "http://35.240.166.93:8080/truonghocthongminh/api/chat/",
+  "serverApitoken": "http://35.240.166.93:8080/truonghocthongminh/api/savetoken/"
 }
