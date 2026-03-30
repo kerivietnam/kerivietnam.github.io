@@ -1,7 +1,7 @@
 {
-  "serverWebadmin": "http://3.107.19.244:8080/doimatvietnam/",
-  "serverWebclient": "http://3.107.19.244:8080/doimatvietnam/client/trangchinh.php",
-  "serverApicheckin": "http://3.107.19.244:8080/doimatvietnam/api/checkin/",
-  "serverApichat": "http://3.107.19.244:8080/doimatvietnam/api/chat/",
-  "serverApitoken": "http://3.107.19.244:8080/doimatvietnam/api/savetoken/"
+  "serverWebadmin": "http://35.240.166.93:8080/doimatvietnam/",
+  "serverWebclient": "http://35.240.166.93:8080/doimatvietnam/client/trangchinh.php",
+  "serverApicheckin": "http://35.240.166.93:8080/doimatvietnam/api/checkin/",
+  "serverApichat": "http://35.240.166.93:8080/doimatvietnam/api/chat/",
+  "serverApitoken": "http://35.240.166.93:8080/doimatvietnam/api/savetoken/"
 }
